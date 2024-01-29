@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF=8"?>
+<catalogo>
+    <producto nombre="chocolate" precio="4.5" descripcion="Chocolate en barra de 3 gramos cada onza">
+        <caracteristicas>
+            <caracteristica nombre="peso">300</caracteristica>
+            <caracteristica nombre="marca">Nestle</caracteristica>
+        </caracteristicas>
+    </producto>  
+    <producto nombre="churros" precio="6" descripcion="Paquete de 6 churros congelados">
+        <caracteristicas>
+            <caracteristica nombre="peso">800</caracteristica>
+            <caracteristica nombre="marca">Nestle</caracteristica>
+            <caracteristica nombre="unidades">6</caracteristica>
+            <caracteristica nombre="seccion">ultramarinos</caracteristica>
+        </caracteristicas>
+    </producto>
+</catalogo>

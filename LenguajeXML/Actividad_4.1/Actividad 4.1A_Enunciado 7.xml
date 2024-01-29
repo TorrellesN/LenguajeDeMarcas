@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF=8"?>
+<pedido>
+    <cliente>
+        <datos_de_facturacion>
+            <direccion>
+                <calle>General Ricardos</calle>
+                <numero_calle>56<numero_calle>
+                <codigo_postal>28055</codigo_postal>
+                <ciudad>Madrid</ciudad>
+            </direccion>
+            <cliente>
+                <nombre>Roberto Movilla<nombre>
+            </cliente>
+        </datos_de_facturacion>        
+        
+        <datos_de_envio>
+            <direccion>
+                <calle>Plaza de la Duquesa</calle>
+                <numero_calle>12<numero_calle>
+                <codigo_postal>05020</codigo_postal>
+                <ciudad>Albacete</ciudad>
+            </direccion>
+            <persona_recoge>
+                <nombre>Alicia Abad<nombre>
+            </persona_recoge>
+        </datos_de_envio>
+    
+    </cliente>
+    
+    <productos>
+        <producto nombre="cortadora de césped" precio="148.95" codigo="872-AA">
+            <especificaciones>
+                <cantidad>1</cantidad>
+                <especificacion nombre="estado">oferta</especificacion>
+                <especificacion nombre="utilidad">jardinería</especificacion>
+            </especificaciones>
+        </producto>
+        <producto nombre="podadora" precio="7.98" codigo="926-FH">
+            <cantidad>3</cantidad>
+            <especificaciones>
+                <especificacion nombre="utilidad">jardinería</especificacion>
+            </especificaciones>
+        </producto>
+    </productos>
+
+
+</pedido>
