@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE steam [
+    <!ELEMENT juego (nombre, numero_de_jugadores)>
+    <!ATTLIST 
+]>
+
+<steam>
+    <juegos>
+        <juego id="879" precio="18.36" activo="yes" numero_de_descargas="2">
+            <nombre>Counter Strike</nombre>
+            <numero_de_jugadores>368772552</numero_de_jugadores>
+        </juego>
+        <juego id="178" precio="28.36" activo="no">
+            <nombre>Warhammer 40k</nombre>
+            <numero_de_jugadores>0</numero_de_jugadores>
+        </juego>
+    </juegos>
+    <usuarios>
+        <usuario id="user-123" email="fuer@gmail.com">
+            <nombre>Javier</nombre>
+            <apellido tipo="primerApellido">Fuertes</apellido>
+            <apellido tipo="segundoApellido">Sanz</apellido>
+        </usuario>
+        <usuario id="user-228" email="asun@hotmail.com">
+            <nombre>Asunción</nombre>
+            <apellido tipo="primerApellido">Sanz</apellido>
+            <apellido tipo="segundoApellido"></apellido>
+        </usuario>
+    </usuarios>
+</steam>

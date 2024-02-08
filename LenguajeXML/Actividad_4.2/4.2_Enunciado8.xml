@@ -1,0 +1,16 @@
+<!DOCTYPE recetas [
+    <!ELEMENT receta (nombre, ingredientes, instrucciones)>
+
+    <!ATTLIST receta raciones (CDATA)>
+    <!ATTLIST receta dificultad (baja #DEFAULT|media|alta)>
+    
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT ingredientes (ingrediente)>
+    <!ELEMENT ingrediente (#PCDATA)>
+
+    <!ATTLIST ingrediente cantidad CDATA #IMPLIED>
+    <!ATTLIST ingrediente unidad_cantidad CDATA #IMPLIED>
+
+    <!ELEMENT instrucciones (#PCDATA)>
+
+]>
