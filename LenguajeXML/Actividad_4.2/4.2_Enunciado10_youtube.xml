@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE youtube [
+    <!ELEMENT youtube (todo, suscripciones)>
+    <!ELEMENT todo (video+)>
+    <!ELEMENT video (titulo, autor)>
+    <!ATTLIST video id NMTOKEN #REQUIRED>
+    <!ATTLIST video fecha_de_estreno CDATA #IMPLIED>
+    <!ATTLIST video suscripciones CDATA #IMPLIED>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ATTLIST titulo visualizaciones CDATA #IMPLIED>
+    <!ATTLIST titulo comentarios CDATA #IMPLIED>
+    <!ELEMENT autor (#PCDATA)>
+    <!ATTLIST autor id NMTOKEN #REQUIRED>
+
+    <!ELEMENT suscripciones (mas_recientes, shorts)>
+    <!ELEMENT mas_recientes (video+)>
+    <!ELEMENT shorts (short+)>
+    <!ELEMENT short (autor)>
+    <!ATTLIST short id NMTOKEN #REQUIRED>
+    <!ATTLIST short duracion CDATA #REQUIRED>
+    <!ATTLIST short descripcion CDATA #IMPLIED>
+]>
+
+<youtube>
+    <todo>
+        <video id="-mZlJy89874" fecha_de_estreno="12/2/24">
+            <titulo visualizaciones="378K">Rueda de prensa</titulo>
+            <autor id="19878">Diario AS</autor>
+        </video>
+        <video id="-mZlJyVFZC4" fecha_de_estreno="1/5/22">
+            <titulo visualizaciones="1,3M">Joris Voorn</titulo>
+            <autor id="19888">Cercle</autor>
+        </video>
+    </todo>
+    <suscripciones>
+        <mas_recientes>
+            <video id="-mZlJyVFZC4" suscripciones="1930000">
+                <titulo comentarios="3254">Joris Voorn Fisher</titulo>
+                <autor id="19878">Joris Voorn</autor>
+            </video>
+            <video id="-mZPJyVFZC5" suscripciones="2030000">
+                <titulo comentarios="3254">Nina Kraviz at the Concourse</titulo>
+                <autor id="20658">Nina Kraviz</autor>
+            </video>
+        </mas_recientes>
+        <shorts>
+            <short id="87952" duracion="3.15" descripcion="animales">
+                <autor id="80658">Frank de la Jungla</autor>
+            </short>
+             <short id="87952" duracion="3.15">
+                <autor id="25658">Nina Kraviz</autor>
+            </short>
+        </shorts>
+    </suscripciones>
+</youtube>
+

@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE steam [
+    <!ELEMENT steam (juegos, usuarios)>
+    <!ELEMENT juegos (juego+)>
     <!ELEMENT juego (nombre, numero_de_jugadores)>
-    <!ATTLIST 
+    <!ATTLIST juego id NMTOKEN #REQUIRED>
+    <!ATTLIST juego precio NMTOKEN #REQUIRED>
+    <!ATTLIST juego activo (yes|no) #REQUIRED>
+    <!ATTLIST juego numero_de_descargas CDATA #IMPLIED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT numero_de_jugadores (#PCDATA)>
+    <!ELEMENT usuarios (usuario+)>
+    <!ELEMENT usuario (nombre, apellido+)>
+    <!ATTLIST usuario id ID #REQUIRED>
+    <!ATTLIST usuario email CDATA #REQUIRED>
+    <!ELEMENT apellido (#PCDATA)>
+    <!ATTLIST apellido tipo (primerApellido | segundoApellido) #REQUIRED>
 ]>
 
 <steam>
