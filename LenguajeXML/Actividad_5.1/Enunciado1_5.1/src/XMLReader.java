@@ -1,5 +1,6 @@
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
 
 import javax.sound.midi.Soundbank;
 import javax.xml.parsers.DocumentBuilder;
@@ -43,6 +44,26 @@ public class XMLReader {
             String atributoTwitter = elementoAutor.getAttribute("twitter");
             String atributoEmail = elementoAutor.getAttribute("email");
             System.out.println("Autor: " + elementoAutor.getTextContent() + " | Twitter: " + atributoTwitter + " | Email: " + atributoEmail);
+
+
+            Noticia noticia = new Noticia(elementoTitulo.getTextContent(),
+                    elementoCategoria.getTextContent(), elementoDescripcion.getTextContent(), elementoAutor.getTextContent());
+
+
+
+
+            Element elementoficherosAdjuntos = (Element) elementoRaiz.getElementsByTagName("ficheros_adjuntos").item(0);
+            NodeList ficherosAdjuntos = elementoficherosAdjuntos.getElementsByTagName("fichero_adjunto");
+
+            System.out.println(ficherosAdjuntos.getLength());
+            for (int i=0; i < ficherosAdjuntos.getLength(); i++){
+
+                //String valorficheroAdjunto = ((Element) ficherosAdjuntos.item(i).getElementsByTagName("fichero_adjunto").item(0)).getTextContent();
+
+                Element elementoNombreFicheroAdjunto = ((Element) ficherosAdjuntos.item(i)).getElementsByTagName("nombre").item(0);
+                String elementoNombre = elementoNombreFicheroAdjunto.getTextContent();
+
+            }
 
         }catch (Exception e){
             e.printStackTrace();

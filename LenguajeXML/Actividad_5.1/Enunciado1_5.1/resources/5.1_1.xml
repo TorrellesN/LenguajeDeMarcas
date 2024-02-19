@@ -4,4 +4,12 @@
     <categoria>Aplicaciones</categoria>
     <descripcion>Apple tiene en mente crear una herramienta de modificación de imágenes mediante texto. Es una gran pista de lo que nos espera.</descripcion>
     <autor twitter="@ricardo" email="ric@gmail.com">Ricardo Aguilar</autor>
+    <ficheros_adjuntos>
+        <fichero_adjunto id="1">
+            <nombre>Fichero 1</nombre>
+        </fichero_adjunto>
+        <fichero_adjunto id="2">
+            <nombre>Fichero 2</nombre>
+        </fichero_adjunto>
+    </ficheros_adjuntos>
 </noticia>
