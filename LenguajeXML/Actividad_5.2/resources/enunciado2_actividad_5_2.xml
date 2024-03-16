@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usuarios>
+    <usuario id="1">
+        <nombre apellido="Pérez" edad="25">Juan</nombre>
+        <contacto>
+            <email>juan.perez@email.com</email>
+            <telefono>1234567890</telefono>
+        </contacto>
+    </usuario>
+    <usuario id="2">
+        <nombre apellido="Gómez" edad="30">Maria</nombre>
+        <contacto>
+            <email>maria.gomez@email.com</email>
+            <telefono>9876543210</telefono>
+        </contacto>
+    </usuario>
+</usuarios>

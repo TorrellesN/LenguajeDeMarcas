@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taller [
+        <!ELEMENT taller (nombreTaller, instructor, participantes)>
+        <!ELEMENT nombreTaller (#PCDATA)>
+        <!ATTLIST nombreTaller categoria CDATA #REQUIRED>
+        <!ATTLIST nombreTaller duracion CDATA #REQUIRED>
+        <!ELEMENT instructor (nombre, especialidad)>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT especialidad (#PCDATA)>
+        <!ATTLIST especialidad categoria CDATA #REQUIRED>
+        <!ATTLIST especialidad experiencia CDATA #REQUIRED>
+        <!ELEMENT participantes (participante+)>
+        <!ELEMENT participante (equipo)>
+        <!ATTLIST participante id NMTOKEN #REQUIRED>
+        <!ATTLIST participante nombre CDATA #REQUIRED>
+        <!ATTLIST participante apellidos CDATA #IMPLIED>
+        <!ELEMENT equipo (herramienta*, equipoSeguridad*)>
+        <!ATTLIST equipo categoria CDATA #REQUIRED>
+        <!ELEMENT herramienta (#PCDATA)>
+        <!ATTLIST herramienta tipo CDATA #REQUIRED>
+        <!ATTLIST herramienta marca CDATA #REQUIRED>
+        <!ELEMENT equipoSeguridad (#PCDATA)>
+        <!ATTLIST equipoSeguridad tipo CDATA #REQUIRED>
+        <!ATTLIST equipoSeguridad talla CDATA #IMPLIED>
+        <!ATTLIST equipoSeguridad marca CDATA #IMPLIED>
+
+]>
+
+<taller>
+    <nombreTaller categoria="mecánica" duracion="5 días">
+        Taller de Reparación de Automóviles
+    </nombreTaller>
+    <instructor>
+        <nombre>Instructor Nombre</nombre>
+        <especialidad categoria="mecánica" experiencia="10 años"></especialidad>
+    </instructor>
+    <participantes>
+        <participante id="1" nombre="Juan" apellidos="Fuertes">
+            <equipo categoria="herramientas">
+                <herramienta tipo="llave" marca="Craftsman"></herramienta>
+                <herramienta tipo="gato" marca="Pro-Lift"></herramienta>
+            </equipo>
+        </participante>
+        <participante id="2" nombre="Maria">
+            <equipo categoria="seguridad">
+                <equipoSeguridad tipo="guantes" talla="M"></equipoSeguridad>
+                <equipoSeguridad tipo="gafas" marca="3M"></equipoSeguridad>
+            </equipo>
+        </participante>
+    </participantes>
+</taller>

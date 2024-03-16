@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<perros>
+    <perro>
+        <nombre>Robbie</nombre>
+        <edad>3</edad>
+        <vacunado>Sí</vacunado>
+        <peso>32.5</peso>
+        <color_de_pelo>negro</color_de_pelo>
+    </perro>
+    <perro>
+        <nombre>Lisa</nombre>
+        <edad>10</edad>
+        <vacunado>Sí</vacunado>
+        <peso>8.5</peso>
+        <color_de_pelo>marrón</color_de_pelo>
+    </perro>
+</perros>
