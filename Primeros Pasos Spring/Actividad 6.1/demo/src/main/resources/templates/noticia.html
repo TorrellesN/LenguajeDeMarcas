@@ -42,10 +42,22 @@
         </nav>
     </div>
 </div>
-<div class="container">
-    <p th:text="${noticia.getTitulo()}"></p>
-    <p th:text="${noticia.getDescripcion()}"></p>
 
+<div class="container-fluid">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-8 text-center">
+            <p class="blog-header-logo text-body-emphasis fs-1 fw-bold text-decoration-none" th:text="${noticia.getTitulo()}"></p>
+            <p class="my-4 fw-normal text-muted " th:text="${noticia.getDescripcion()}"></p>
+            <img class="mx-auto d-block img-fluid" th:src="${noticia.getRuta_foto()}" alt="">
+        </div>
+        <div class="col"></div>
+    </div>
+
+</div>
+
+<div class="container-fluid justify-content-center ml-5 mr-5 pl-5 pr-5">
+   
 
 </div>
 
