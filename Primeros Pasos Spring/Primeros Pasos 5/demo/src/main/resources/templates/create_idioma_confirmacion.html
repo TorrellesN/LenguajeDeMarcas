@@ -57,26 +57,10 @@
         <div class="row my-5">
             <div class="col-2"></div>
             <div class="col-4 mt-3">
-                <h1 class="fw-semibold">Crear nuevo idioma</h1>
+                <h1 class="fw-semibold" th:text=" 'El idioma ' + ${idioma.getNombre()} + ' ha sido creado.'"></h1>
             </div>
         </div>
-        <form class="row mt-4" method="post" th:action="@{/create_idioma}" th:object="${idioma}">
-            <div class="col-2"></div>
-            <div class="col-4 mb-5">
-                
-                <label for="InputCodigo" class="form-label">Código</label>
-                <input type="number" class="form-control" id="InputCodigo" placeholder="Código" th:field="*{codigo}">
-                <button type="submit" class="btn btn-primary mt-4 mb-5">Crear</button>
-                
-            </div>
-            <div class="col-4 mb-5">
-                
-                <label for="InputPais" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="InputPais" placeholder="Nombre" th:field="*{nombre}">
-            </div>
-            <div class="col-2"></div>
 
-        </form>
         <hr class="my-4">
     </main>
 
