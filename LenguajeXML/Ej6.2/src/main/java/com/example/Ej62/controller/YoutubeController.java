@@ -123,7 +123,7 @@ public class YoutubeController {
         }
 
 
-        return "youtube_xml.xml";
+        return "index";
     }
 
 }
